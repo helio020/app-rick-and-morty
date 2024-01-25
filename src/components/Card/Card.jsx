@@ -1,11 +1,13 @@
-import "./Cards.css";
+import Attributes from "../Attributes/Attributes";
+import "./Card.css";
 
-function Cards() {
+function Card() {
   return (
     <div className="card">
-      <h2>Rick Sanchez</h2>
+      <h2 className="card__name">Rick Sanchez</h2>
+      <Attributes />
       <img
-        className="image"
+        className="card__image"
         src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
         alt="Rick Sanchez"
       />
@@ -13,4 +15,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default Card;

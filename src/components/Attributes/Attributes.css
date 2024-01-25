@@ -1,0 +1,18 @@
+.card__attributes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.card__attributes__status,
+.card__attributes__specie,
+.card__attributes__origin {
+    padding: 0.125rem 0.625rem;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+}

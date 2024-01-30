@@ -25,13 +25,15 @@ const item3 = {
   origin: "Terra (Dimensão de Substituição)",
 };
 
+const itens = [item1, item2, item3];
+
 function App() {
   return (
     <>
       <div className="cards">
-        <Card item={item1} />
-        <Card item={item2} />
-        <Card item={item3} />
+        {itens.map((item, i) => (
+          <Card item={item} key={i} />
+        ))}
       </div>
     </>
   );

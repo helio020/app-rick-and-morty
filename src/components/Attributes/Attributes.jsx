@@ -1,16 +1,18 @@
+/* eslint-disable react/prop-types */
 import "./Attributes.css";
 
-function Attributes() {
+function Attributes(props) {
+  const item = props.item;
   return (
     <div className="card__attributes">
       <div className="card__attributes__status">
-        <span>Status: Vivo</span>
+        <span>Status: {item.status}</span>
       </div>
       <div className="card__attributes__specie">
-        <span>Espécie: Humana</span>
+        <span>Espécie: {item.species}</span>
       </div>
       <div className="card__attributes__origin">
-        <span>Origem: Terra C-137</span>
+        <span>Origem: {item.origin}</span>
       </div>
     </div>
   );
